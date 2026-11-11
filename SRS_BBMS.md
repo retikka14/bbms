@@ -4,29 +4,17 @@
 
 **Version:** 1.0\
 **Software Engineering - UE24CS341A**\
-**Team:** 7\
 **Date:** 05-09-2026
 
 ## Authors
 
   Name                  SRN             Section
   --------------------- --------------- ---------
-  G S Retikka Prasad       PES2UG24AM057   C
-  Gaganashree R            PES2UG24AM058   C
-  Jyothika M   PES2UG24AM070   C
-  Durugesh B         PES2UG24AM056   C
+  G S Retikka Prasad       PES2UG24AM057   A
+  Gaganashree R            PES2UG24AM058   A
+  Jyothika M   PES2UG24AM070   A
+  Durugesh B         PES2UG24AM056   A
 
-## Revision History
-
-  Version   Date         Author   Change Summary
-  --------- ------------ -------- ---------------------------
-  1.0       05-09-2026   Team 7   Initial SRS with diagrams
-
-## Approvals
-
-  Role                 Name                  Signature / Email   Date
-  -------------------- --------------------- ------------------- ------
-                       
 
 ## Table of Contents
 
