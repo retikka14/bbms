@@ -88,9 +88,6 @@ The system is designed with the following requirements:
 - Requirements Traceability Matrix (RTM)
 - Test Cases and Acceptance Tests
 
-## Project Status
-
-🚧 Currently under development.
 
 ## Running the application
 
