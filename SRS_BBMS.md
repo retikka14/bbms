@@ -11,10 +11,10 @@
 
   Name                  SRN             Section
   --------------------- --------------- ---------
-  Deepthi N Reddy       PES2UG24CS149   C
-  Hansika.R             PES2UG24CS178   C
-  Gurudu Guru Preetam   PES2UG24CS174   C
-  C Rohit Reddy         PES2UG24CS125   C
+  G S Retikka Prasad       PES2UG24AM057   C
+  Gaganashree R            PES2UG24AM058   C
+  Jyothika M   PES2UG24AM070   C
+  Durugesh B         PES2UG24AM056   C
 
 ## Revision History
 
@@ -26,7 +26,7 @@
 
   Role                 Name                  Signature / Email   Date
   -------------------- --------------------- ------------------- ------
-  Course Coordinator   Pradeep Kumar Kenny                       
+                       
 
 ## Table of Contents
 
