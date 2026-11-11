@@ -1,47 +1,47 @@
-# Blood Bank Management System
+# Blood Bank Management System (BBMS)
 
-A Software Engineering project for managing blood donors, blood donations, blood inventory, blood requests, recipients, and administrative operations.
+A web-based Software Engineering project developed to manage blood donors, donations, blood inventory, recipients, blood requests, and administrative operations.
 
-The Blood Bank Management System (BBMS) is a web-based application designed to centralize blood-bank records and support day-to-day blood-bank workflows such as donor management, blood donation recording, inventory tracking, blood requests, allocation, and issue/fulfillment.
+The **Blood Bank Management System (BBMS)** aims to centralize blood-bank records and streamline essential workflows, including donor registration, donation recording, inventory tracking, blood request management, blood allocation, and fulfillment.
 
 ## Project Modules
 
-- Donor Management
-- Blood Donation & Inventory Management
-- Recipient & Blood Request Management
-- Admin & Authentication Management
+1. **Donor Management**
+2. **Blood Donation & Inventory Management**
+3. **Recipient & Blood Request Management**
+4. **Admin & Authentication Management**
 
 ## Key Features
 
 ### 1. Donor Management
-- Register new donors with personal and blood-group information
-- View and update donor details
-- Maintain donor eligibility information
-- Maintain donation history associated with each donor
+- Register donors with personal details and blood-group information.
+- View and update donor profiles.
+- Maintain donor eligibility information.
+- Track donation history for individual donors.
 
 ### 2. Blood Donation & Inventory Management
-- Record blood donations with donor, date, blood group, quantity/unit, and status
-- Create or update blood inventory from valid donations
-- View available blood units by blood group and status
-- Search and filter blood inventory
-- Track blood expiry dates
-- Identify expired blood units and prevent them from being treated as available
+- Record donations with donor details, donation date, blood group, quantity, and status.
+- Update inventory based on valid donations.
+- View available blood units by blood group and status.
+- Search and filter blood inventory records.
+- Track blood-unit expiry dates.
+- Identify expired units and prevent them from being marked as available.
 
 ### 3. Recipient & Blood Request Management
-- Register recipients and maintain recipient records
-- Create blood requests with blood group, quantity, priority, and required details
-- Validate blood request information
-- Track request status such as Pending, Approved, Rejected, Allocated, Fulfilled, and Cancelled
-- Allocate compatible available blood units to approved requests
-- Record blood issue/fulfillment and update related statuses
+- Register recipients and maintain their records.
+- Create blood requests with blood group, quantity, priority, and other required details.
+- Validate blood request information.
+- Track request statuses: Pending, Approved, Rejected, Allocated, Fulfilled, and Cancelled.
+- Allocate compatible available blood units to approved requests.
+- Record blood issuance and fulfillment while updating related statuses.
 
 ### 4. Admin & Authentication Management
-- Secure user authentication
-- Role-Based Access Control (RBAC)
-- Protected administrative functions
-- Manage user accounts and roles
-- Generate basic reports for donations, inventory, requests, and issue/fulfillment
-- Maintain audit information for significant administrative and operational actions
+- Provide secure user authentication.
+- Implement Role-Based Access Control (RBAC).
+- Restrict administrative functions to authorized users.
+- Manage user accounts and roles.
+- Generate basic reports covering donations, inventory, requests, and fulfillment.
+- Maintain audit records for significant administrative and operational activities.
 
 ## Team Members & Responsibilities
 
@@ -52,59 +52,120 @@ The Blood Bank Management System (BBMS) is a web-based application designed to c
 | Jyothika M | PES2UG24AM070 | Recipient & Blood Request Management |
 | Durugesh B | PES2UG24AM056 | Donor Management |
 
-Each team member is responsible for developing and maintaining their assigned module in a separate Git branch before integration into the main project.
+Each team member is responsible for developing and maintaining their assigned module in a separate Git branch. Individual modules will be integrated into the main project through Git-based collaboration.
 
 ## Technology Stack
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: Python / Django
-- Database: MySQL / PostgreSQL
-- Version Control: Git & GitHub
+| Component | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python, Django |
+| Database | SQLite (current local development configuration) |
+| Version Control | Git, GitHub |
 
-## Security
+## Security Requirements
 
-The system follows security requirements including:
+The system aims to incorporate the following security measures:
 
-- HTTPS/TLS for protected communication
-- Secure password hashing
-- Role-Based Access Control (RBAC)
-- Input validation and safe database operations
-- Audit logging of significant administrative and operational actions
+- HTTPS/TLS for secure communication in deployment.
+- Secure password hashing.
+- Role-Based Access Control (RBAC).
+- Input validation and safe database operations.
+- Audit logging for significant administrative and operational actions.
 
 ## Non-Functional Requirements
 
-The system is designed with the following requirements:
+The following are the project's target non-functional requirements:
 
-- Common dashboard and search operations should respond within 2 seconds for 90% of requests under the defined project test load
-- Target availability of at least 99% during planned operational periods
-- Responsive and understandable interfaces on supported modern browsers
-- Consistent and recoverable records during validation or transaction errors
-- Modular and maintainable code structure
+- **Performance:** Common dashboard and search operations should respond within 2 seconds for 90% of requests under the defined test load.
+- **Availability:** Target availability of at least 99% during planned operational periods.
+- **Usability:** Responsive and understandable interfaces across supported modern browsers.
+- **Reliability:** Consistent and recoverable records during validation failures and transaction errors.
+- **Maintainability:** Modular code structure that supports testing, debugging, and future enhancements.
 
 ## Project Documentation
+
+The project documentation includes:
 
 - Software Requirements Specification (SRS)
 - UML Use-Case Diagrams
 - Requirements Traceability Matrix (RTM)
 - Test Cases and Acceptance Tests
 
+## Project Status
 
-## Running the application
+**Currently under development.**
 
-The `manage.py` entry point uses the `config` Django settings and the local
-SQLite database (`db_local.sqlite3`).
+## Getting Started
+
+### Prerequisites
+
+- Python installed
+- Git
+- pip (Python package manager)
+
+### 1. Clone the repository
+
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd Blood-Bank-Management-System
+```
+
+### 2. Create and activate a virtual environment
+
+**macOS / Linux**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply database migrations
 
 ```bash
 python manage.py migrate
+```
+
+### 5. Create an administrator account
+
+```bash
 python manage.py createsuperuser
+```
+
+Follow the prompts to configure the administrator credentials.
+
+### 6. Start the development server
+
+```bash
 python manage.py runserver
 ```
 
-Open `http://127.0.0.1:8000/` and sign in at `/accounts/login/`. The unified
-dashboard links to donor management, blood inventory, blood requests, and
-administration (for users with the Admin role). The Django admin user and audit
-record tools are linked from Admin Management for accounts with Django staff
-access.
+### 7. Open the application
 
-Existing API endpoints remain available under `/api/`; the integrated HTML
-pages are at `/`, `/donors/`, `/inventory/`, and `/requests/`.
+Visit:
+
+- **Main application:** http://127.0.0.1:8000/
+- **Login:** http://127.0.0.1:8000/accounts/login/
+- **Django Admin:** http://127.0.0.1:8000/admin/
+
+The application uses the `config` Django settings module and a local SQLite database (`db_local.sqlite3`).
+
+The integrated application includes pages for donor management, blood inventory, and blood requests. Administrative features are available to appropriately authorized users.
+
+Existing API endpoints are available under `/api/`.
+
+> **Note:** The Django development server is intended for local development and testing, not production deployment.
+
